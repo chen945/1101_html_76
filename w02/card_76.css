@@ -1,0 +1,55 @@
+body{
+    background-color:#f1f5f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*字體的選擇*/
+}
+
+.card{
+    background-color: #fff;
+    padding: 1.5rem 2rem;  /*文字和框的距離--上下同距離 左右同距離 */
+    text-align: center;   /*字體對中 */
+    max-width: 300px;
+    margin: 3rem;    /*最外框的距離*/
+    border-radius: 0.5rem; /*外框弧形*/
+    border: 1px solid transparent; /*框線 設定透明*/
+}
+
+.card-1{
+    border-color:rgb(205, 162, 180); /*框線顏色*/
+}
+
+.card-2{
+    border-color:rgb(102, 156, 183);
+}
+
+.icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.card-1 .icon{
+    background-color:rgb(205, 162, 180);
+   }
+   
+.card-2 .icon{
+    background-color:rgb(102, 156, 183);
+   }
+
+.btn{
+    text-transform: capitalize; /*第一個字大寫*/
+    padding: 0.5rem 1rem;
+    border: transparent;
+    border-radius: 0.5rem;
+    letter-spacing: 2px; /*字跟字距離*/
+}
+
+.btn-1{
+    color:#ffe8f1;
+    background-color:rgb(222, 176, 195);    
+}
+
+.btn-2{
+    color:rgb(192, 231, 255);
+    background-color:rgb(141, 166, 181);    
+}
