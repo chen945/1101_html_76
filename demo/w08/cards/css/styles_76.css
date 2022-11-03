@@ -46,6 +46,15 @@ Variables
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --max-width: 1170px;
+
+  /*btn set*/
+
+  --card1:rgba(225, 77, 77, 0.588);
+  --card2:rgba(46, 109, 235, 0.588);
+  --card3:rgba(35, 146, 35, 0.588);
+  --card1color:rgba(237, 27, 27, 0.997);
+  --card2color:rgba(0, 84, 252, 0.915);
+  --card3color:rgba(28, 118, 16, 0.9);
 }
 /*
 =============== 
@@ -242,71 +251,69 @@ CARD
     max-width: 300px;
     margin: 3rem;    /*最外框的距離*/
     border-radius: 0.5rem; /*外框弧形*/
-    border: 1px solid transparent; /*框線 設定透明*/
+    border: 1px solid transparent;
 }
 
-.card-1{
-    border-color:rgb(205, 162, 180); /*框線顏色*/
+.card-1 {
+  border-color:var(--card1);    
 }
 
-.card-2{
-    border-color:rgb(102, 156, 183);
+.card-2 {
+  border-color: var(--card2);
 }
 
-.icon{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin: 0 auto;
+.card-3 {
+  border-color: var(--card3);
 }
 
-.card-1 .icon{
-    background-color:rgb(205, 162, 180);
-   }
-   
-.card-2 .icon{
-    background-color:rgb(102, 156, 183);
-   }
-
-.card .btn{
-    text-transform: capitalize; /*第一個字大寫*/
-    padding: 0.5rem 1rem;
-    border: transparent;
-    border-radius: 0.5rem;
-    letter-spacing: 2px; /*字跟字距離*/
+.card1 .btn {
+  text-transform: capitalize;
+  padding: 0.5rem 1rem;
+  border: transparent;
+  border-radius: 1rem;
+  letter-spacing: 2px;
 }
 
-.btn-1{
-    color:#ffe8f1;
-    background-color:rgb(222, 176, 195);    
+.card1 .btn-1 {
+  background: var(--card1);
+  color: var(--card1color);
+  border: 1px solid;
 }
 
-.btn-2{
-    color:rgb(192, 231, 255);
-    background-color:rgb(141, 166, 181);    
+.card1 .btn-2 {
+  background:var(--card2);
+  color:var(--card2color);
+  border: 1px solid;
+}
+
+.card1 .btn-3 {
+  background: var(--card3);
+  color:var(--card3color);
+  border: 1px solid;
 }
 
 
+/* 
 @media screen and (min-width: 430px) {
-    .allcard {
+    .cards {
       grid-template-columns: repeat(2, 1fr);
       font-size: 12px;
     }
   }
   
   @media screen and (min-width: 768px) {
-    .allcard {
+    .cards {
       grid-template-columns: repeat(3, 1fr);
       font-size: 14px;
     }
   }
   
   @media screen and (min-width: 1000px) {
-    .allcard {
+    .cards {
       grid-template-columns: repeat(4, 1fr);
       font-size: 16px;
     }
-  }
+  } */
 
 
 
