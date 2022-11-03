@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+  }
+  
+  :root {
+     --card1:rgba(225, 77, 77, 0.588);
+     --card2:rgba(46, 109, 235, 0.588);
+     --card3:rgba(35, 146, 35, 0.588);
+     --card1color:rgba(237, 27, 27, 0.997);
+     --card2color:rgba(0, 84, 252, 0.915);
+     --card3color:rgba(28, 118, 16, 0.9);
+  }
+
+body {
+  background: #f1f5f9;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+  grid-template-columns: 1fr 1fr 1fr 1fr
+}
+
+.allcard{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    font-size: 10px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  max-width: 300px;
+  margin: 3rem;
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+  
+}
+.card-1 {
+    border-color:var(--card1);    
+}
+
+.card-2 {
+    border-color: var(--card2);
+}
+
+.card-3 {
+    border-color: var(--card3);
+}
+
+.img {
+    width: 100%;
+    height: 12rem;
+    display: block;
+    object-fit: cover;
+  }
+  
+.person-info {
+  display: flex;
+  justify-content: space-between;
+}
+.img-person{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* .card-1 .icon {
+    background:  #ff69a6;
+}
+
+.card-2 .icon {
+    background:  #68a3ff;
+}
+
+.card-3 .icon {
+    background: #68ff95;
+} */
+
+.btn {
+  text-transform: capitalize;
+  padding: 0.5rem 1rem;
+  border: transparent;
+  border-radius: 1rem;
+  letter-spacing: 2px;
+}
+.btn-1 {
+  background: var(--card1);
+  color: var(--card1color);
+  border: 1px solid;
+}
+
+.btn-2 {
+  background:var(--card2);
+  color:var(--card2color);
+  border: 1px solid;
+}
+
+.btn-3 {
+  background: var(--card3);
+  color:var(--card3color);
+  border: 1px solid;
+}
+
+
+@media screen and (min-width: 430px) {
+    .allcard {
+      grid-template-columns: repeat(2, 1fr);
+      font-size: 12px;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .allcard {
+      grid-template-columns: repeat(3, 1fr);
+      font-size: 14px;
+    }
+  }
+  
+  @media screen and (min-width: 1000px) {
+    .allcard {
+      grid-template-columns: repeat(4, 1fr);
+      font-size: 16px;
+    }
+  }
+  
