@@ -518,7 +518,21 @@ resume
   text-transform: uppercase;
   color: #94d9ea;
 }
+
 .resume-right{
   background-color: antiquewhite;
   height: 100%;
+}
+
+
+.about{
+  font-size: 3rem;
+  color:rgb(65, 65, 244);
+  padding: 1rem 1rem;
+}
+
+.info{
+  text-align: auto;
+  padding: 1rem 2rem;
+  
 }
