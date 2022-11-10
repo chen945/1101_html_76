@@ -495,6 +495,29 @@ resume
   height: 100%;
 }
 
+.left-content{
+  padding: 2.5rem 3rem;
+}
+
+.profile img{
+  width: 100%;
+  border-radius: 50%;
+}
+
+.name{
+  font-size: 2rem;
+  color: #fff;
+  padding: 1.2rem 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.career{
+  font-size: 1.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #94d9ea;
+}
 .resume-right{
   background-color: antiquewhite;
   height: 100%;
