@@ -85,6 +85,15 @@ Sidebar
       }
     }
   }
+
+  .social-icons {
+    position: absolute;
+    font-size: 2rem;
+    display: flex;
+    gap: 2rem;
+    border-color: transparent;
+    background-color: transparent;
+  }
 }
 
 .show-sidebar {
