@@ -4,9 +4,12 @@ const date = document.querySelector("#date");
 const navBtn = document.querySelector("#nav-btn");
 const closeBtn = document.querySelector("#close-btn");
 const sidebar = document.querySelector("#sidebar");
+
+date.innerHTML = new Date().getFullYear();
+
 console.log("navBtn", navBtn);
-console.log("closeBtn", closeBtn);
-console.log("sidebar", sidebar);
+// console.log("closeBtn", closeBtn);
+// console.log("sidebar", sidebar);
 
 navBtn.addEventListener("click", function () {
   sidebar.classList.add("show-sidebar");
