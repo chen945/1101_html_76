@@ -1,0 +1,1 @@
+sass --watch demo/finalproject_76/portfolio/scss:demo/finalproject_76/portfolio/css
