@@ -627,6 +627,11 @@ Netfilx
   transform: scale(1.09);
 }
 
+@media screen and (min-width: 768px) {
+  .banner-center {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 /*
 =============== 
 resume
